@@ -1,0 +1,5 @@
+<div class="header">
+    <img routerLink="/" class="img-pokeapi" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="">
+    <span *ngIf="router.url == '/'" routerLink="/mi-lista" class="my-list">Mi lista</span>
+    <span *ngIf="router.url != '/'" routerLink="/" class="my-list">Regresar</span>
+</div>
