@@ -1,0 +1,19 @@
+.container-fluid{
+    margin: 90px 0 50px 0;
+    
+}
+.card{
+    margin: 15px 0 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.card-img-top{
+    margin: 10px 0 0 0;
+}
+.card-title{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding: 0 0 10px 0;
+}
+.details{
+    padding: 10px 0 0 0;
+}

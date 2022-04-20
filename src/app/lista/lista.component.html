@@ -1,3 +1,32 @@
-<div *ngFor="let items of datos">
-
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let items of datos"  class="col-sm-12 col-md-6 col-xl-3 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; height: auto">
+                <img [src]="items.urlPhoto" class="card-img-top" alt="..." height="150">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{items.namePokemon}}</h5>
+                    <div class="row details">
+                        <div class="col-6 py-2">
+                            <span class="row d-flex justify-content-center fw-bold text-secondary">Altura: </span>
+                            <span class="row d-flex justify-content-center">{{items.height}} m</span>
+                        </div>
+                        <div class="col-6 py-2">
+                            <span class="row d-flex justify-content-center fw-bold text-secondary">Peso: </span>
+                            <span class="row d-flex justify-content-center">{{items.weight}} kg</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 py-2">
+                            <span class="row d-flex justify-content-center fw-bold text-secondary">Habilidades: </span>
+                            <span class="row d-flex justify-content-center">{{items.abilities.length}}</span>
+                        </div>
+                        <div class="col-6 py-2">
+                            <span class="row d-flex justify-content-center fw-bold text-secondary">Tipos: </span>
+                            <span class="row d-flex justify-content-center">{{items.typesPokemon.length}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

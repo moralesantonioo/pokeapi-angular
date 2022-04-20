@@ -52,11 +52,13 @@ export class HomeComponent implements OnInit {
       typesPokemon: this.typesPokemon,
       weight: this.weight,
       height: this.height,
-      abilities: this.abilities
+      abilities: this.abilities,
+      id: this.id
     }
     this.dataPokemon.push(saveData);
     localStorage.setItem('dataPokemon', JSON.stringify(this.dataPokemon));
     //const data = localStorage.getItem('name')
     //console.log(this.dataPokemon, "pokemon guardado");
   }
+  
 }

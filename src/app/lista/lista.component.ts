@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
   datos:any[] = [];
-  constructor() { }
+  constructor() { };
+  id?:number
 
   ngOnInit(): void {
     this.datos = JSON.parse(localStorage.getItem('dataPokemon') || '')
     console.log(this.datos)
+    this.datos.forEach((e) => {
+      this.id = e.id
+      console.log(e.id)
+    })
   }
-
 }
